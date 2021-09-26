@@ -22,7 +22,7 @@ pExitStatus=0
 ### Functions ########################################################
 
 fnMsg() {
-    /usr/bin/logger -t "${0}" "$*"
+    /usr/bin/logger -t "${0##*/}" "$*"
 }
 
 fnEnd() {
@@ -35,7 +35,7 @@ fnEnd() {
         15 ) fnMsg "Error, Directory not exist. (${2})";;
         *  ) fnMsg "Error, unknown error. (${2})";;
     esac
-    fnMsg "##### ${0##*/} End. #############"
+    fnMsg "Script end."
     exit "${1}"
 }
 
