@@ -1,0 +1,46 @@
+2021/10/22 22:39:06 [Notice] [common.conf] Environment directory check.
+2021/10/22 22:39:06 Exist directory: git/chk-rpi-model/conf
+2021/10/22 22:39:06 [Err] Directory not exist. (git/chk-rpi-model/data)
+2021/10/22 22:39:06 Script end.
+2021/10/22 22:42:05 Script start.
+2021/10/22 22:42:05 [Notice] [common.conf] Environment directory check.
+2021/10/22 22:42:05 Exist directory: git/chk-rpi-model/conf
+2021/10/22 22:42:05 Exist directory: git/chk-rpi-model/data
+2021/10/22 22:42:05 [Notice] Environment check end.
+2021/10/22 22:42:05 sample message.
+2021/10/22 22:42:05 Script end.
+2021/10/22 22:42:13 Script start.
+2021/10/22 22:42:13 [Notice] [common.conf] Environment directory check.
+2021/10/22 22:42:13 Exist directory: git/chk-rpi-model/conf
+2021/10/22 22:42:13 Exist directory: git/chk-rpi-model/data
+2021/10/22 22:42:13 [Notice] Environment check end.
+2021/10/22 22:42:13 sample message.
+2021/10/22 22:42:13 Script end.
+2021/10/22 22:42:30 Script start.
+2021/10/22 22:42:30 [Notice] [common.conf] Environment directory check.
+2021/10/22 22:42:30 Exist directory: git/chk-rpi-model/conf
+2021/10/22 22:42:30 Exist directory: git/chk-rpi-model/data
+2021/10/22 22:42:30 [Notice] Environment check end.
+2021/10/22 22:42:30 sample message.
+2021/10/22 22:42:30 Script end.
+2021/10/22 22:43:29 [template.sh] Script start.
+2021/10/22 22:43:29 [Notice] [common.conf] Environment directory check.
+2021/10/22 22:43:29 Exist directory: git/chk-rpi-model/conf
+2021/10/22 22:43:29 Exist directory: git/chk-rpi-model/data
+2021/10/22 22:43:29 [Notice] Environment check end.
+2021/10/22 22:43:29 sample message.
+2021/10/22 22:43:29 Script end.
+2021/10/22 22:44:43 [template.sh] Script start.
+2021/10/22 22:44:43 [Notice] [common.conf] Environment directory check.
+2021/10/22 22:44:43 Exist directory: git/chk-rpi-model/conf
+2021/10/22 22:44:43 Exist directory: git/chk-rpi-model/data
+2021/10/22 22:44:43 [Notice] Environment check end.
+2021/10/22 22:44:43 sample message.
+2021/10/22 22:44:43 [template.sh] Script end.
+2021/10/23 03:52:33 [template.sh] Script start.
+2021/10/23 03:52:33 [Notice] [common.conf] Environment directory check.
+2021/10/23 03:52:33 Exist directory: ./conf
+2021/10/23 03:52:33 Exist directory: ./data
+2021/10/23 03:52:33 [Notice] Environment check end.
+2021/10/23 03:52:33 sample message.
+2021/10/23 03:52:33 [template.sh] Script end.
