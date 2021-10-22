@@ -3,6 +3,7 @@
 ##
 ## Script name : rpi-model.sh
 ## Create      : 2021.9.23 - kjimba
+## Update      : 2021.10.22 - kjimba
 ## Char code   : UTF-8 (Non BOM)
 ## Output lang : ja-JP.UTF8
 ##
@@ -10,8 +11,11 @@
 
 ### Paramters & Variables settings ###################################
 
+# Database directory
+pDBDir=${0%/*}/conf
+
 # Database file
-pDBFile=rpimodel.dat
+pDBFile=${pDBDir}/rpimodel.dat
 
 # https://elinux.org/RPi_HardwareHistory
 pDB="$(/bin/cat ${pDBFile})"

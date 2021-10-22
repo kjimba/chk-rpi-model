@@ -1,0 +1,7 @@
+# data ignore settign.
+
+# Archive file
+*.gz
+*.tar
+*.zip
+
