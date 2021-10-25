@@ -2,11 +2,12 @@
 Raspberry Pi OS の利用時に使える、ちょっとしたツールを公開しています。
 
 # スクリプトの目的
-rpi-model.sh     Raspberry pi の model を表示します。
-template.sh      template です。開発は、基本的に template.sh をもとにしています。
+## rpi-model.sh
+Raspberry pi の model を表示します。
 
-# メンバー
-神場
+## template.sh
+script template です。
+開発は、基本的に template.sh をもとにしています。
 
 # ディレクトリ構成
 conf/            スクリプトが利用する設定ファイルを置く場所になっています。
