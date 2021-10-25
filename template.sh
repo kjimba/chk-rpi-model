@@ -12,7 +12,14 @@
 ### Paramters & Variables settings ###################################
 
 # Common configuration file
-. ${0%/*}/conf/common.conf
+pCommonConf="${0%/*}/conf/common.conf"
+
+if [ -f ${pCommonConf} ]; then
+  . ${pCommonConf}
+else
+  echo "File not exist. (${pCommonConf})"
+  exit 1
+fi
 
 # Script configuration file
 [ -f "${pConfig}" ] && . ${pConfig}
