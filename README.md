@@ -2,14 +2,28 @@
 Raspberry Pi OS の利用時に使える、ちょっとしたツールを公開しています。
 
 # スクリプトの目的
-## rpi-model.sh
-Raspberry pi の model を表示します。
 
-## getApach2backup.sh
+## 情報表示系
+実行した環境の情報を取得し、加工して表示するスクリプトです。
+
+### rpi-model.sh
+このスクリプトを実行した Raspberry pi の model を表示します。
+
+### chkFileType.sh
+このスクリプトは、環境変数 ${PATH} に存在するファイル（コマンド）を file でチェックして、使用言語毎に分類します。
+
+## ファイル取得系
+実行した環境のファイルをまとめて取得するスクリプトです。
+アクセスするファイルの都合上、実行時は権限に注意してください。
+
+### getApach2backup.sh
 getApach2backup.sh は Raspbian OS 標準構成の apache2 環境をバックアップします。
 初期状態では root 権限での実行が必要です。
 
-## template.sh
+## その他
+このスクリプトは未分類のものです。
+
+### template.sh
 script template です。
 開発は、基本的に template.sh をもとにしています。
 
