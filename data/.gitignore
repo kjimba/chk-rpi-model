@@ -5,3 +5,7 @@
 *.tar
 *.zip
 
+# Output data
+*.txt
+*.csv
+
