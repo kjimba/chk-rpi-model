@@ -1,9 +1,9 @@
-#!/bin/bash
+#/bin/bash
 ######################################################################
 ##
 ## Script name : chkFileType.sh
 ## Create      : 2021.10.25 -  神場
-## Update      : 2021.10.25 -  神場
+## Update      : 2021.10.28 -  神場
 ## Char code   : UTF-8 (Non BOM)
 ## Output lang : ja-JP.UTF8
 ##
@@ -12,20 +12,7 @@
 ### Paramters & Variables settings ###################################
 
 # Common configuration file
-#pCommonConf="${0%/*}/conf/common.conf"
-
-list2=""
-langlist=""
-pRC="
-"
-nCount=0
-nPerl=0
-nELF=0
-nSLink=0
-nShell=0
-nBShell=0
-nPython=0
-nOther=0
+pCommonConf="${0%/*}/conf/common.conf"
 
 if [ -f ${pCommonConf} ]; then
   . ${pCommonConf}
@@ -37,6 +24,10 @@ fi
 # Script configuration file
 [ -f "${pConfig}" ] && . ${pConfig}
 
+# Output ---------------------------------------------------
+
+# output file
+
 ### Functions ########################################################
 
 
@@ -44,14 +35,14 @@ fi
 
 ## リスト作成 ----------------------------------------------
 for p in ${PATH//:/ }; do
-  echo "### ${p}"
+  fnNotice "### ${p}"
   list2="${list2} $(ls ${p}/* 2>/dev/null)"
 done
 list=$(echo "${list2}" | grep "^/" | grep -v ":$")
 
 ## 種別判定 ------------------------------------------------
 for str in ${list}; do
-  echo "## ${str}"
+  fnInfo "## ${str}"
   filetype=$(file "${str}")
   nCount=$(( ${nCount} + 1))
   case ${filetype##*: } in
@@ -75,13 +66,16 @@ for str in ${list}; do
       ;;
     * )
       nOther=$(( ${nOther} + 1))
-      echo ${filetype##*: }
+      fnNotice ${filetype##*: }
       langlist="${langlist}${pRC}${filetype%%,*}"
       ;;
   esac
 done
 
 ## 結果出力 ------------------------------------------------
+
+fnDebug "Output ${pLangList}"
+echo "${langlist}" | sort -u > ${pLangList}
 
 echo "=============================="
 echo "Compile type: ${nELF}"
@@ -94,7 +88,6 @@ echo "Other: ${nOther}"
 echo "=============================="
 echo "All: ${nCount}"
 echo ""
-echo "Other language list: $(echo "${langlist}" | sort -u)"
 
 
 ### End Script #######################################################
