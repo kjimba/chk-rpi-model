@@ -8,8 +8,10 @@ Raspberry Pi OS の利用時に使える、ちょっとしたツールを公開�
 
 ### rpi-model.sh
 このスクリプトを実行した Raspberry pi の model を表示します。
+/proc/cpuinfo から取得した情報を conf/rpimodel.dat と照合しているため、最新環境では判別できないことがあります。
 
 ### chkFileType.sh
+コマンドに使われる言語の数を確認します。
 このスクリプトは、環境変数 ${PATH} に存在するファイル（コマンド）を file でチェックして、使用言語毎に分類します。
 
 ## ファイル取得系
